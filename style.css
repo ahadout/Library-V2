@@ -126,3 +126,8 @@ table td{
     cursor: pointer;
     color: white;
 }
+#printTable:hover{
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+}
