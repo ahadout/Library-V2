@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library V2</title>
+</head>
+<body>
+    <header>
+        <img src="book_Logo.png" width="75px" height="75px">
+        <h1>LIBRARY</h1>
+    </header>
+    <main>
+        <section class="section1">
+            <h1>Add a Book</h1>
+            <form id="form" name="form">
+                <div class="book_name">
+                    <label>Book Name :</label>
+                    <input type="text" placeholder="Book Name" id="bookName">
+                </div>
+                <div class="author">
+                    <label>Author :</label>
+                    <input type="text" placeholder="Author" id="author">
+                </div>
+                <div class="authorEmail">
+                    <label>Author's Email :</label>
+                    <input type="email" placeholder="Author's Email" id="authorEmail">
+                </div>
+                <div class="language">
+                    <label>Language :</label>
+                    <select id="language" name="language">
+                        <option disabled selected hidden value="0">Language</option>
+                        <option value="Anglais">Anglais</option>
+                        <option value="Français">Français</option>
+                        <option value="Arabic">Arabic</option>
+                    </select>
+                </div>
+                <div class="type_container" id="input2">
+                    <h3>Type :</h3>
+                    <label for="Roman" class="type_label1">Roman</label>
+                    <input type="radio" id="roman" name="Type" value="Roman" class="typeE">
+                    <label for="Essai" class="type_label1">Essai</label>
+                    <input type="radio" id="essai" name="Type" value="Essai" class="typeE">
+                    <label for="Bande-Dessinée" class="type_label1">Bande-Dessinée</label>
+                    <input type="radio" id="bande-dessinée" name="Type" value="Bande-Dessinée" class="typeE">
+                    <label for="Other" class="type_label1">Other</label>
+                    <input type="radio" id="other" name="Type" value="Other" class="typeE">
+                </div>
+                <div class="date">
+                    <label>Date :</label>
+                    <input type="date" placeholder="Date" id="date">
+                </div>
+                <div class="Price">
+                    <label>Price :</label>
+                    <input type="number" placeholder="Price" id="price">
+                    <p class="validation" id="msgPrix"></p>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Add Book" id="submit">
+                </div>
+                <div id="print">
+                    <input type="submit" value="Print Table" id="printTable">
+                </div>
+            </form>
+        </section>
+        <section class="section2">
+            <h2>Books Added :</h2>
+            <table id="table">
+                <tr>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Author's Email</th>
+                    <th>Language</th>
+                    <th>Type</th>
+                    <th>Date</th>
+                    <th>Price</th>
+                    <th>Modify</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <script src="scripttest.js"></script>
+</body>
+</html>

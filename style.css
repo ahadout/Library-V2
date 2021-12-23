@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr;
+    background-color: #0077B6;
+}
+header img{
+    grid-column: 1 / 2;
+    justify-self: center;
+    align-self: center;
+}
+header h1{
+    grid-column: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    color: white;
+}
+main{
+    background-image: url(library.jpg);
+    min-height: 95vh;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    row-gap: 25px;
+}
+.section1{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    background-color: #00b4d8;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 30px;
+}
+.section1 h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 42px;
+    margin-top: 25px;
+    text-align: center;
+}
+.section1 form{
+    margin-top: 20px;
+    color: black;
+}
+.section1 div{
+    display: grid;
+    margin-bottom: 15px;
+    grid-template-columns: 30% 60%;
+}
+.section1 div label{
+    grid-column: 1/2;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+}
+.section1 div input{
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+}
+.section1 div select{
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+}
+.section1 div h3{
+    color: black;
+    margin-bottom: 5px;
+}
+.section1 div .type_label1{
+    color: white;
+}
+.submit input{
+    grid-column: 2/3;
+    width: 45%;
+    justify-self: end;
+    background-color: green;
+}
+.submit input:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+/* section 2*/
+.section2{
+    grid-column: 2/3;
+    color: white;
+}
+.section2 h2{
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+table{
+    width: 100%;
+}
+table, th, td{
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+}
+table th{
+    background-color: #00b4d8;
+}
+table td{
+    background-color: #90e0ef;
+}
+.modify{
+    width: 100%;
+    border: none;
+    background: transparent;
+}
+.modify:hover{
+    background: blue;
+    cursor: pointer;
+    color: white;
+}
+.delete{
+    width: 100%;
+    border: none;
+    background: transparent;
+}
+.delete:hover{
+    background-color: red;
+    cursor: pointer;
+    color: white;
+}
